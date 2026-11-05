@@ -1,0 +1,1 @@
+(function(){const c=document.getElementById('hist');const ctx=c.getContext('2d');const data=[12,3,22,40,7,19,33,12,22,5,17,40,9,28];const bins=12;const w=c.width,h=c.height;const max=Math.max(...data);ctx.clearRect(0,0,w,h);const bw=w/bins;for(let i=0;i<bins;i++){const v=data[i%data.length];const nh=(v/max)*h;ctx.fillStyle='#4a77a8';ctx.fillRect(i*bw+4,h-nh+2,bw-8,nh);} })();
